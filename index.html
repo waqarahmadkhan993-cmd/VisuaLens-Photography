@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisualLens Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">Visual<span>Lens.</span></a>
+
+    <button id="menuBtn" aria-label="Toggle menu">☰</button>
+
+    <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <p class="label">A COLLECTION OF MOMENTS</p>
+        <h1>Life, Through<br><em>Another Lens.</em></h1>
+        <p>Explore beautiful photographs of nature, travel,
+        people and architecture from around the world.</p>
+        <a href="#gallery" class="main-btn">Explore Gallery →</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+             alt="Beautiful mountain landscape">
+    </div>
+</section>
+
+<section class="gallery-section" id="gallery">
+    <p class="label">THE COLLECTION</p>
+    <h2>Frames Worth Keeping.</h2>
+    <p class="description">Beautiful moments captured through a lens.</p>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="travel">Travel</button>
+        <button class="filter-btn" data-filter="people">People</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+
+        <article class="photo-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=85" alt="Green forest">
+            <div class="photo-info">
+                <h3>Into the Green</h3>
+                <p>Nature · 2026</p>
+            </div>
+        </article>
+
+        <article class="photo-card" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=85" alt="Road trip">
+            <div class="photo-info">
+                <h3>Open Road</h3>
+                <p>Travel · 2026</p>
+            </div>
+        </article>
+
+        <article class="photo-card" data-category="people">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=85" alt="Portrait photography">
+            <div class="photo-info">
+                <h3>A Quiet Moment</h3>
+                <p>People · 2026</p>
+            </div>
+        </article>
+
+        <article class="photo-card" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=85" alt="Modern building">
+            <div class="photo-info">
+                <h3>Lines and Light</h3>
+                <p>Architecture · 2026</p>
+            </div>
+        </article>
+
+        <article class="photo-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=85" alt="Ocean waves">
+            <div class="photo-info">
+                <h3>Ocean Air</h3>
+                <p>Nature · 2026</p>
+            </div>
+        </article>
+
+        <article class="photo-card" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=85" alt="Desert landscape">
+            <div class="photo-info">
+                <h3>Desert Silence</h3>
+                <p>Travel · 2026</p>
+            </div>
+        </article>
+
+    </div>
+    <p id="noResults" hidden>No photos found.</p>
+</section>
+
+<section class="about" id="about">
+    <p class="label">BEHIND THE LENS</p>
+    <h2>Every Picture Has a Story.</h2>
+    <p>VisualLens celebrates the beauty of everyday places,
+       people and moments through photography.</p>
+</section>
+
+<footer>
+    <h3>VisualLens<span>.</span></h3>
+    <p>Made by Waqar Ahmad Khan</p>
+    <p>© 2026 VisualLens Photography</p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+    <button id="closeBtn" aria-label="Close image">×</button>
+    <button id="prevBtn" aria-label="Previous image">‹</button>
+    <img id="lightboxImg" src="" alt="Full-size photograph">
+    <button id="nextBtn" aria-label="Next image">›</button>
+    <p id="lightboxCaption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
